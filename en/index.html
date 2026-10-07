@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>RNDS · The boxing timer for iPhone and Apple Watch</title>
+  <meta name="description" content="The boxing app that times your rounds and keeps every session. On iPhone and Apple Watch, with no ads.">
+  <meta property="og:site_name" content="RNDS">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://rnds.app/en/">
+  <meta property="og:title" content="RNDS · Round after round">
+  <meta property="og:description" content="The boxing app that times your rounds and keeps every session. On iPhone and Apple Watch, with no ads.">
+  <meta property="og:image" content="https://rnds.app/img/og-en.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RNDS, round after round. The boxing timer on iPhone, with its red 60-tick dial.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://rnds.app/img/og-en.jpg">
+  <meta name="theme-color" content="#000000">
+  <link rel="canonical" href="https://rnds.app/en/">
+  <link rel="alternate" hreflang="fr" href="https://rnds.app/">
+  <link rel="alternate" hreflang="en" href="https://rnds.app/en/">
+  <link rel="alternate" hreflang="x-default" href="https://rnds.app/">
+  <link rel="icon" href="/img/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/img/favicon.png" type="image/png" sizes="64x64">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/kode-mono-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/debut.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "RNDS",
+    "operatingSystem": "iOS 26, watchOS 26",
+    "applicationCategory": "HealthApplication",
+    "description": "Round timer, training journal, runs and prep for boxers. iPhone and Apple Watch.",
+    "inLanguage": ["en", "fr"],
+    "author": { "@type": "Person", "name": "Marc Bouraoui" }
+  }
+  </script>
+</head>
+<body>
+<a class="skip" href="#contenu">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="r" viewBox="0 0 128 128"><path d="M40.5 28H76.1L87.5 44.6V55.8L78.1 65.5L87.5 79.2V98H76.8V80.9L67.3 67.2H57.4L51.2 63.3V98H40.5V28ZM51.2 37.9V57.2H72.5L76.8 52.8V46.6L70.8 37.9H51.2Z" fill="currentColor"/></symbol>
+  <symbol id="mot" viewBox="20.2 48.8 88 29.9"><path d="M20.2667 48.8267H35.456L40.32 55.9093V60.688L36.3094 64.8267L40.32 70.672V78.6933H35.7547V71.3973L31.7013 65.552H27.4773L24.832 63.888V78.6933H20.2667V48.8267ZM24.832 53.0507V61.2853H33.92L35.7547 59.408V56.7627L33.1947 53.0507H24.832ZM58.3514 48.8267H62.9167V78.6933H58.3514V68.624L48.2394 53.648H47.4713V78.6933H42.906V48.8267H50.5007L58.3514 60.944V48.8267ZM65.8867 48.8267H79.924L85.94 57.7867V74.8107L82.228 78.6933H65.8867V48.8267ZM70.452 53.0507V74.4693H80.3507L81.3747 73.4453V58.5973L77.62 53.0507H70.452ZM91.8967 48.8267H104.526L107.257 52.9653L104.185 55.952L102.222 53.0507H93.646L92.7074 54.0747V59.2373L94.158 61.2853H104.91L108.195 66.2347V75.2373L104.867 78.6933H90.2754L87.9714 75.408L90.9154 72.336L92.494 74.4693H102.947L103.63 73.9147V66.96L102.606 65.552H91.854L88.142 60.048V52.752L91.8967 48.8267Z" fill="currentColor"/></symbol>
+  <symbol id="fleche" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></symbol>
+</svg>
+
+<header class="header" id="header">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="RNDS, back to top">
+      <svg class="logo__mot" aria-hidden="true"><use href="#mot"/></svg>
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#timer">Timer</a>
+      <a href="#programmes">Programs</a>
+      <a href="#run">Run</a>
+      <a href="#prepa">Prep</a>
+      <a href="#suivi">Journal</a>
+      <a href="#support">Support</a>
+    </nav>
+    <div class="header__droite">
+      <a class="langue" href="/" hreflang="fr" lang="fr" title="Version française">FR</a>
+      <span class="compteur" aria-hidden="true"><b id="compteur">1</b>/<span id="total">10</span></span>
+      <a class="btn btn--os btn--petit" href="#telecharger">Get notified</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><i aria-hidden="true"><span></span><span></span></i></button>
+    </div>
+    <div class="progression" id="progression" aria-hidden="true"></div>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-label="Menu">
+  <ul>
+    <li><a href="#timer">Timer</a></li>
+    <li><a href="#programmes">Programs</a></li>
+    <li><a href="#run">Run</a></li>
+    <li><a href="#prepa">Prep</a></li>
+    <li><a href="#suivi">Journal</a></li>
+    <li><a href="#support">Support</a></li>
+  </ul>
+  <div class="menu__bas">
+    <a class="btn btn--rouge" href="#telecharger">Get notified at launch</a>
+    <a class="langue" href="/" hreflang="fr" lang="fr">Français</a>
+  </div>
+</div>
+
+<main id="contenu">
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__fond" aria-hidden="true">
+      <video class="hero__video" data-large="/video/banniere.mp4" data-small="/video/banniere-mobile.mp4" poster="/img/banniere.jpg" muted loop playsinline preload="none"></video>
+    </div>
+    <div class="wrap hero__grille">
+      <div class="hero__texte">
+        <h1 class="titre t-xl" data-in style="--d:.08s">Round<br>after<br>round.</h1>
+        <p class="lede" data-in style="--d:.16s">The boxing app that times your rounds and keeps every session. <b>On iPhone and Apple Watch.</b><sup class="appel"><a href="#note-1" aria-label="Note 1">1</a></sup></p>
+        <div class="hero__actions" data-in style="--d:.24s">
+          <a class="badge-store" href="#telecharger" data-app-store><img src="/img/badges/app-store-en-us.svg" width="144" height="48" alt="Download on the App Store"></a>
+          <a class="btn btn--rouge" href="mailto:contact@rnds.app?subject=Let%20me%20know%20when%20RNDS%20launches">Get notified at launch</a>
+        </div>
+        <p class="label si-bientot" data-in style="--d:.3s">Coming soon to the App Store</p>
+      </div>
+      <div class="iphone" data-in style="--d:.2s">
+        <div class="iphone__corps"><img src="/img/app/accueil.webp" width="1000" height="2174" fetchpriority="high" alt="RNDS home screen, in French: 16 rounds left for the weekly goal, a 3-day streak and the Start a Session button."><span class="iphone__bouton"></span></div>
+        <p class="legende">Real screenshot, October 6, 2026<sup class="appel"><a href="#note-4" aria-label="Note 4">4</a></sup></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timer -->
+  <section class="sec sec--carbone" id="timer">
+    <div class="wrap timer">
+      <div class="iphone" data-in>
+        <div class="iphone__corps"><img src="/img/app/timer.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="The timer running: round 1 of 9, 5 seconds left, red dial with 60 ticks."><span class="iphone__bouton"></span></div>
+      </div>
+      <div class="timer__droite">
+        <div class="sec__tete" style="margin-bottom:0" data-in>
+          <h2 class="titre t-l">The timer</h2>
+          <p class="lede">A big number you can read from the bag, <b>and beeps that cut through your music.</b></p>
+        </div>
+        <div class="specs" data-in>
+          <div><p class="chiffre">12 × 3<span class="unite">min</span></p><p class="label">Pro</p></div>
+          <div><p class="chiffre">3 × 2<span class="unite">min</span></p><p class="label">Amateur</p></div>
+          <div><p class="chiffre">6 × 3<span class="unite">min</span></p><p class="label">Bag session</p></div>
+          <div><p class="chiffre">1–15<span class="unite">rounds</span></p><p class="label">Custom</p></div>
+        </div>
+        <ul class="points">
+          <li data-in><h3>Beeps and voice</h3><p class="texte">The timer sounds at the start and end of every round, and warns you ten seconds before the end.</p></li>
+          <li data-in style="--d:.06s"><h3>Rhythm mode</h3><p class="texte">During the round, a voice calls out the combos and the screen shows the defense to work on.</p></li>
+          <li data-in><h3>Your music keeps playing</h3><p class="texte">Apple Music or your podcast doesn’t stop. The volume can dip for a beep.</p></li>
+          <li data-in style="--d:.06s"><h3>Lock screen</h3><p class="texte">The round stays on screen in a Live Activity and in the Dynamic Island.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Programs and coach -->
+  <section class="sec" id="programmes">
+    <div class="wrap">
+      <div class="sec__tete sec__tete--2" data-in>
+        <div style="display:grid;gap:22px">
+          <h2 class="titre t-l">Programs</h2>
+        </div>
+        <p class="lede">Each program runs three to six weeks, with one focus for each session. <b>A session counts as done once you’ve finished three quarters of its rounds.</b></p>
+      </div>
+
+      <div class="progs">
+        <article class="prog" data-in>
+          <div class="prog__haut"><span class="label">Recreational</span><span class="prog__n">01</span></div>
+          <div>
+            <h3 class="titre t-m">Shadow foundations</h3>
+            <p class="texte">Guard, footwork, jab, cross and slips, shadowboxing before you hit the bag.</p>
+            <div class="semaines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <p class="prog__meta">4 weeks, 3 sessions a week</p>
+          </div>
+        </article>
+        <article class="prog" data-in style="--d:.06s">
+          <div class="prog__haut"><span class="label">Amateur</span><span class="prog__n">02</span></div>
+          <div>
+            <h3 class="titre t-m">Bag: power</h3>
+            <p class="texte">5 to 8 three-minute rounds on the bag, with body work and an all-out finish to every round.</p>
+            <div class="semaines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <p class="prog__meta">4 weeks, 3 sessions a week</p>
+          </div>
+        </article>
+        <article class="prog" data-in style="--d:.12s">
+          <div class="prog__haut"><span class="label">All levels</span><span class="prog__n">03</span></div>
+          <div>
+            <h3 class="titre t-m">Cardio boxing</h3>
+            <p class="texte">Rhythm mode at a fast tempo, with short rounds and short rests.</p>
+            <div class="semaines" aria-hidden="true"><i></i><i></i><i></i></div>
+            <p class="prog__meta">3 weeks, 3 sessions a week</p>
+          </div>
+        </article>
+        <article class="prog" data-in style="--d:.18s">
+          <div class="prog__haut"><span class="label">Competitor</span><span class="prog__n">04</span></div>
+          <div>
+            <h3 class="titre t-m">Fight camp</h3>
+            <p class="texte">Shadowboxing, bag work and rhythm mode in rotation, up to 12 three-minute rounds.</p>
+            <div class="semaines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+            <p class="prog__meta">6 weeks, 3 sessions a week</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="coach">
+        <div class="coach__texte" data-in>
+          <p class="label">Remote coaching</p>
+          <h3 class="titre t-l">Coach</h3>
+          <p class="lede">Your coach sends you sessions as links: fight training, strength, running or a meal plan. <b>Open the link and the session is added to RNDS.</b></p>
+          <ul class="coach__liste">
+            <li><span>Get your sessions</span><span>through Messages, AirDrop or any messaging app</span></li>
+            <li><span>Send your weekly report</span><span>with a note if you like</span></li>
+            <li><span>Coaching others?</span><span>send sessions to your boxers and follow their work</span></li>
+          </ul>
+        </div>
+        <div class="iphone" data-in style="--d:.1s">
+          <div class="iphone__corps"><img src="/img/app/coach.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Coach screen, in French: My coach, I coach, and the weekly report to send."><span class="iphone__bouton"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Run -->
+  <section class="sec sec--carbone" id="run">
+    <div class="wrap">
+      <div class="sec__tete sec__tete--2" data-in>
+        <div style="display:grid;gap:22px">
+          <p class="label">Roadwork</p>
+          <h2 class="titre t-l">Run</h2>
+        </div>
+        <p class="lede">GPS tracks your distance, pace and route. <b>The app also has interval sessions, track sessions and heart rate zone runs.</b></p>
+      </div>
+      <ul class="table">
+        <li data-in><h3>Running rounds</h3><p>6 × 3 min at threshold, 1 min recovery, like a fight.</p><span class="label">Intervals</span></li>
+        <li data-in><h3>30/30</h3><p>10 × 30 s all out, 30 s recovery.</p><span class="label">Intervals</span></li>
+        <li data-in><h3>VO2max 10 × 400 m</h3><p>One lap each time, 90 s recovery. The app logs your time and pace for every 400.</p><span class="label">Track</span></li>
+        <li data-in><h3>Pyramid</h3><p>1, 2, 3, 2, then 1 min at threshold, 1 min recovery.</p><span class="label">Intervals</span></li>
+        <li data-in><h3>Threshold</h3><p>3 × 8 min in zone 4, 2 min recovery.</p><span class="label">Zone 4</span></li>
+        <li data-in><h3>Endurance</h3><p>40 easy minutes to build your aerobic base.</p><span class="label">Zone 2</span></li>
+      </ul>
+      <p class="note" data-in>At every kilometer, a beep, then a voice reads out your distance and time.</p>
+    </div>
+  </section>
+
+  <!-- Prep -->
+  <section class="sec" id="prepa">
+    <div class="wrap">
+      <div class="sec__tete sec__tete--2" data-in>
+        <div style="display:grid;gap:22px">
+          <p class="label">Around your training</p>
+          <h2 class="titre t-l">Prep</h2>
+        </div>
+        <p class="lede">Sleep, meals, water and weight, <b>in the same place as your sessions.</b></p>
+      </div>
+      <div class="galerie">
+        <figure data-in>
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/prepa.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Prep screen, in French: current program, coach, sleep, nutrition and water, weight."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>The Prep screen</b><span>Your current program, your coach, last night’s sleep, your meals and your weight.</span></figcaption>
+        </figure>
+        <figure data-in style="--d:.06s">
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/sommeil.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Sleep screen, in French: 9 h 46 last night, well recovered, green light for an intense session."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>Sleep</b><span>Your sleep, read from Health or logged by hand, and a tip for today’s session.<sup class="appel"><a href="#note-3" aria-label="Note 3">3</a></sup></span></figcaption>
+        </figure>
+        <figure data-in style="--d:.12s">
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/sommeil-nuits.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="The last seven nights against an 8-hour goal, and naps with an alarm. French interface."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>Nights and naps</b><span>Your last seven nights against your goal, and an alarm for naps.</span></figcaption>
+        </figure>
+        <figure data-in style="--d:.18s">
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/nutrition.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Nutrition screen, in French: today’s calories and macros, hydration, photo of a meal."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>Meals and water</b><span>Take a photo of your plate: your iPhone estimates the calories and macros, and the photo never leaves your phone.<sup class="appel"><a href="#note-2" aria-label="Note 2">2</a></sup></span></figcaption>
+        </figure>
+      </div>
+      <p class="note" data-in>For weight, pick your weight class (16, from strawweight to cruiserweight) and your weigh-in date, then track your weight all the way to fight night.</p>
+    </div>
+  </section>
+
+  <!-- Journal, challenges, badges -->
+  <section class="sec sec--carbone" id="suivi">
+    <div class="wrap">
+      <div class="sec__tete sec__tete--2" data-in>
+        <div style="display:grid;gap:22px">
+          <h2 class="titre t-l">Journal</h2>
+        </div>
+        <p class="lede">Every session is logged and sorted by week and by type. <b>Add your training partners and challenge each other.</b></p>
+      </div>
+      <div class="galerie galerie--3">
+        <figure data-in>
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/journal.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Journal screen, in French: sessions, rounds and time this month, rounds per week, breakdown by type."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>Journal</b><span>Your rounds this week against your goal, and your totals for the month.</span></figcaption>
+        </figure>
+        <figure data-in style="--d:.06s">
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/defis.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Challenges screen, in French: 5 days out of 7 at 40%, 100 rounds in 7 days, 10 km prep."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>Challenges</b><span>Challenges like 5 days out of 7 or 100 rounds in 7 days, solo or head-to-head with your gym partners.</span></figcaption>
+        </figure>
+        <figure data-in style="--d:.12s">
+          <div class="iphone"><div class="iphone__corps"><img src="/img/app/badges.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Badges screen, in French: 5 badges out of 32, first round in bronze, round and streak milestones."><span class="iphone__bouton"></span></div></div>
+          <figcaption><b>Badges</b><span>32 badges to earn by training, from your first round to your thousandth.</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apple Watch and Health -->
+  <section class="sec" id="montre">
+    <div class="wrap montre">
+      <div class="sec__tete montre__tete" data-in>
+        <h2 class="titre t-l">Apple Watch<br>and Health</h2>
+      </div>
+      <ul class="eco">
+        <li data-in><h3>Apple Watch</h3><p class="texte">The watch tracks the session you start on your iPhone and measures your heart rate and calories.<sup class="appel"><a href="#note-1" aria-label="Note 1">1</a></sup></p></li>
+        <li data-in style="--d:.06s"><h3>Health</h3><p class="texte">Sessions, sleep, meals, water and weight are saved to Health, if you allow it.</p></li>
+        <li data-in style="--d:.12s"><h3>Heart rate strap</h3><p class="texte">A Bluetooth strap sends your heart rate straight to your iPhone.</p></li>
+        <li data-in><h3>Live Activities</h3><p class="texte">Runs and sleep also show on the Lock Screen and in the Dynamic Island.</p></li>
+        <li data-in style="--d:.06s"><h3>Siri</h3><p class="texte">Start a session or a run with your voice.</p></li>
+        <li data-in style="--d:.12s"><h3>Control Center</h3><p class="texte">A control to start a session without opening the app.</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Privacy -->
+  <section class="sec prive" id="vie-privee">
+    <div class="wrap">
+      <div class="sec__tete" data-in>
+        <p class="label">Privacy</p>
+        <h2 class="titre t-l">Your journal stays on your iPhone.</h2>
+        <p class="lede"><b>Only what the social features need goes online</b>, and you decide what that is: a hidden session never leaves your phone. There are no ads and no ad trackers, in the app or on this site.</p>
+      </div>
+      <div class="chiffres2">
+        <div data-in><p class="chiffre">30 days</p><p class="texte">of sessions visible online, at most</p></div>
+        <div data-in style="--d:.06s"><p class="chiffre">24 h</p><p class="texte">to review a report</p></div>
+      </div>
+      <p style="margin-top:56px" data-in><a class="lien" href="/en/privacy.html">Read the privacy policy <svg aria-hidden="true"><use href="#fleche"/></svg></a></p>
+    </div>
+  </section>
+
+  <!-- Behind the scenes: a word from the maker and changelog -->
+  <section class="sec" id="coulisses">
+    <div class="wrap coulisses">
+      <div class="mot" data-in>
+        <p class="label">A word from Marc</p>
+        <p class="mot__texte">I box in Lyon, and I built RNDS for my own training first.</p>
+        <p class="mot__texte">If something bugs you during a session, write to me. I read every message.</p>
+        <p class="mot__signe"><span class="titre">Marc</span><span class="label">Lyon, October 2026</span></p>
+      </div>
+      <div class="carnet" data-in style="--d:.1s">
+        <p class="label">Changelog</p>
+        <ol>
+          <li><time datetime="2026-10-06">Oct 06</time><span>New icon: a white R on black, on iPhone and Apple Watch.</span></li>
+          <li><time datetime="2026-10-06">Oct 06</time><span>Sleep: a full year of sleep, month by month.</span></li>
+          <li><time datetime="2026-10-06">Oct 06</time><span>Challenges rebuilt: featured challenge, duels, gym leaderboard.</span></li>
+          <li><time datetime="2026-10-06">Oct 06</time><span>Run: six track sessions and a custom track.</span></li>
+          <li><time datetime="2026-10-05">Oct 05</time><span>Heart rate analysis for boxing, jump rope and strength, round by round.</span></li>
+          <li><time datetime="2026-10-05">Oct 05</time><span>Story editor: templates, background, caption, 1080 × 1920 export.</span></li>
+          <li><time datetime="2026-10-05">Oct 05</time><span>Full code review ahead of version 1.0.</span></li>
+          <li><time datetime="2026-10-04">Oct 04</time><span>Social goes online: profiles, follows, feed, likes and comments.</span></li>
+        </ol>
+        <p class="carnet__version">Version 1.0 in the works</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download and support -->
+  <section class="sec" id="telecharger">
+    <div class="wrap">
+      <div class="dl" data-in>
+        <img class="dl__icone" src="/img/icone.png" width="96" height="96" alt="RNDS app icon">
+        <h2 class="titre t-l">Coming soon<br>to the App Store.</h2>
+        <p class="lede">RNDS launches soon on iPhone and Apple Watch. <b>Send us an email and we’ll let you know on launch day.</b></p>
+        <div class="dl__actions">
+          <a class="badge-store" href="#telecharger" data-app-store><img src="/img/badges/app-store-en-us.svg" width="144" height="48" alt="Download on the App Store"></a>
+          <a class="btn btn--rouge" href="mailto:contact@rnds.app?subject=Let%20me%20know%20when%20RNDS%20launches">Get notified at launch</a>
+        </div>
+        <p class="dl__copie">or write directly to <span>contact@rnds.app</span> <button type="button" class="copier" data-copier="contact@rnds.app">Copy</button></p>
+      </div>
+
+      <div class="faq" id="support">
+        <details><summary>Do I need to create an account?<i aria-hidden="true"></i></summary><p>Yes, in 30 seconds: your email (you get a 6-digit code, no password) or “Continue with Apple.” That’s how you get your account back if you change iPhones.</p></details>
+        <details><summary>Does RNDS work without an Apple Watch?<i aria-hidden="true"></i></summary><p>Yes, everything works with just your iPhone. To see your heart rate during a session, you need an Apple Watch or a Bluetooth heart rate strap.</p></details>
+        <details><summary>Does the timer keep beeping with the screen locked?<i aria-hidden="true"></i></summary><p>Yes. Beeps and voice keep going when the screen is locked, and the round stays on screen in a Live Activity.</p></details>
+        <details><summary>Where is my data?<i aria-hidden="true"></i></summary><p>Your journal stays on your iPhone and in Health. Only what the social features need is online. It’s all explained in the <a href="/en/privacy.html">privacy policy</a>.</p></details>
+        <details><summary>How do I delete my account?<i aria-hidden="true"></i></summary><p>In the app: Settings › Data › Delete my account. Your online data is erased along with it.</p></details>
+      </div>
+      <p class="faq__plus"><a class="lien" href="/en/support.html">All questions <svg aria-hidden="true"><use href="#fleche"/></svg></a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pied">
+  <div class="wrap">
+    <div class="pied__haut">
+      <div class="pied__marque">
+        <a class="logo" href="#top" aria-label="RNDS, back to top"><svg class="logo__mot" aria-hidden="true"><use href="#mot"/></svg></a>
+        <p>A boxing app made in Lyon.</p>
+      </div>
+      <div class="pied__cols">
+        <div>
+          <h4 class="label">The app</h4>
+          <ul><li><a href="#timer">Timer</a></li><li><a href="#programmes">Programs</a></li><li><a href="#run">Run</a></li><li><a href="#prepa">Prep</a></li><li><a href="#suivi">Journal</a></li></ul>
+        </div>
+        <div>
+          <h4 class="label">Info</h4>
+          <ul><li><a href="/en/support.html">Support</a></li><li><a href="/en/privacy.html">Privacy</a></li><li><a href="/en/terms.html">Terms</a></li><li><a href="/en/legal.html">Legal notice</a></li><li><a href="/" hreflang="fr" lang="fr">Version française</a></li></ul>
+        </div>
+        <div>
+          <h4 class="label">Contact</h4>
+          <ul><li><a href="mailto:contact@rnds.app">contact@rnds.app</a> <button type="button" class="copier" data-copier="contact@rnds.app">Copy</button></li><li>Lyon, France</li></ul>
+        </div>
+      </div>
+    </div>
+    <div class="pied__notes">
+      <h4 class="label">Notes</h4>
+      <ol class="notes" aria-label="Notes">
+        <li id="note-1">Requires an Apple Watch with watchOS 26 for heart rate on the wrist. Without a watch, a compatible Bluetooth heart rate strap does the job.</li>
+        <li id="note-2">The estimate is made on the iPhone: by Apple’s on-device model when the device supports it, otherwise by image recognition and a food database. It’s only an estimate.</li>
+        <li id="note-3">Sleep and training tips are not medical advice.</li>
+        <li id="note-4">Real screenshots of the app, taken on iPhone on October 6, 2026, with the app set to French. Only the time and the music playing have been hidden.</li>
+        <li id="note-5">Hero video: NXTLVL Media.</li>
+      </ol>
+      <p class="pied__marques">Apple, the Apple logo, Apple Watch, iPhone and Health are trademarks of Apple Inc., registered in the U.S. and other countries. App Store is a service mark of Apple Inc.</p>
+    </div>
+    <div class="pied__bas">
+      <span>© <span data-annee>2026</span> RNDS. This site uses no cookies.</span>
+      <span>It’s <span class="heure" id="heure" title="Time in Lyon">--<i>:</i>--</span> in Lyon.</span>
+    </div>
+  </div>
+  <div class="pied__mot" aria-hidden="true"><svg viewBox="0 0 88 29.9"><use href="#mot"/></svg></div>
+</footer>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
