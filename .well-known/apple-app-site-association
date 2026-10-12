@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["343SJ34HAP.com.rnds.marcbouraoui"],
+        "components": [
+          { "/": "/u/*", "comment": "Invitation : rnds.app/u/pseudo" },
+          { "/": "/s/*", "comment": "Séance partagée : rnds.app/s/id" }
+        ]
+      }
+    ]
+  }
+}
