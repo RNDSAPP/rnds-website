@@ -185,6 +185,7 @@ ul, ol { list-style: none; }
 /* Galeries de captures */
 .galerie { display: grid; grid-template-columns: repeat(4, 1fr); gap: clamp(16px, 2.4vw, 32px); }
 .galerie--3 { grid-template-columns: repeat(3, 1fr); }
+.galerie--apres { margin-top: clamp(56px, 7vw, 96px); }
 .galerie--3 .iphone { --w: 340px; }
 .galerie figure { display: grid; gap: 24px; align-content: start; }
 .galerie .iphone { --w: 300px; }
