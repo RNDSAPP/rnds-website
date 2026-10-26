@@ -1,7 +1,7 @@
 /* RNDS — site vitrine : en-tête, menu, apparitions. Aucun suivi. */
 (() => {
-  /* Adresse de RNDS sur l'App Store : à coller ici le jour de la sortie (ex. https://apps.apple.com/fr/app/rnds/id0000000000). */
-  const APP_STORE_URL = '';
+  /* Adresse de RNDS sur l'App Store (Apple redirige vers le pays de chacun). */
+  const APP_STORE_URL = 'https://apps.apple.com/app/rnds/id6819875092';
 
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];

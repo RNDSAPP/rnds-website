@@ -401,8 +401,7 @@ ul, ol { list-style: none; }
 .badge-store { display: inline-block; line-height: 0; border-radius: 9px; }
 .badge-store img { height: 48px; width: auto; }
 .badge-store[aria-disabled="true"] { cursor: default; }
-.si-bientot { margin-top: -8px; }
-.a-une-adresse .si-bientot { display: none; }
+.dispo { margin-top: -8px; }
 
 /* Page d'invitation (rnds.app/u/pseudo) */
 .invitation .pseudo { text-transform: none; color: var(--rouge); }
