@@ -110,7 +110,7 @@
 
   $$('[data-annee]').forEach(n => (n.textContent = new Date().getFullYear()));
 
-  console.log('%cRNDS%c\nRound après round. Fait à Lyon.\nUne idée, un bug, envie d’aider ? contact@rnds.app',
+  console.log('%cRNDS%c\nRound après round. Fait à Lyon.\nUne idée, un bug, envie d’aider ? hello.rnds@gmail.com',
     'font: 600 28px "Kode Mono", monospace; color: #f2eae3; background: #000; padding: 6px 12px;',
     'font: 13px Inter, sans-serif; color: #8f8a85; line-height: 1.6;');
 })();
