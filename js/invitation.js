@@ -14,12 +14,12 @@
     aide: 'Une fois l’app installée, rouvre ce lien : la séance s’ouvre dans le Social.'
   }) : {};
   const t0 = en ? {
-    label: 'Invitation', titre: 'invites you to RNDS.', lede: 'A boxing timer and training journal where you can follow their sessions.',
+    label: 'Invitation', titre: 'invites you to RNDS.', lede: 'A round timer and training journal for combat sports, where you can follow their sessions.',
     appareils: 'On iPhone and Apple Watch.', decouvrir: 'See the app', bientot: 'Free on the App Store',
     aide: `Once the app is installed, search for ${pseudo} in Social › Friends to follow them.`,
     badge: '/img/badges/app-store-en-us.svg', badgeAlt: 'Download on the App Store', badgeW: 144, accueil: '/en/', page: 'Invitation · RNDS'
   } : {
-    label: 'Invitation', titre: 't’invite sur RNDS.', lede: 'Un timer de boxe et un journal d’entraînement, où tu pourras suivre ses séances.',
+    label: 'Invitation', titre: 't’invite sur RNDS.', lede: 'Un timer de rounds et un journal d’entraînement pour les sports de combat, où tu pourras suivre ses séances.',
     appareils: 'Sur iPhone et Apple Watch.', decouvrir: 'Voir l’app', bientot: 'Gratuit sur l’App Store',
     aide: `Une fois l’app installée, cherche ${pseudo} dans Social › Amis pour le suivre.`,
     badge: '/img/badges/app-store-fr-fr.svg', badgeAlt: 'Télécharger dans l’App Store', badgeW: 152, accueil: '/', page: 'Invitation · RNDS'
