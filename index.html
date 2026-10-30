@@ -69,7 +69,7 @@
     </nav>
     <div class="header__droite">
       <a class="langue" href="en/" hreflang="en" lang="en" title="English version">EN</a>
-      <span class="compteur" aria-hidden="true"><b id="compteur">1</b>/<span id="total">10</span></span>
+      <span class="compteur" aria-hidden="true"><b id="compteur">1</b>/<span id="total">12</span></span>
       <a class="btn btn--os btn--petit" href="#telecharger">Télécharger</a>
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu"><span class="sr-only">Menu</span><i aria-hidden="true"><span></span><span></span></i></button>
     </div>
@@ -107,11 +107,81 @@
           <a class="badge-store" href="https://apps.apple.com/app/rnds/id6819875092" data-app-store><img src="img/badges/app-store-fr-fr.svg" width="152" height="48" alt="Télécharger dans l’App Store"></a>
         </div>
         <p class="label dispo" data-in style="--d:.3s">Gratuit sur l’App Store</p>
+        <a class="lien" href="#semaine" data-in style="--d:.34s">Voir une semaine avec RNDS <svg aria-hidden="true"><use href="#fleche"/></svg></a>
       </div>
       <div class="iphone" data-in style="--d:.2s">
         <div class="iphone__corps"><img src="img/app/accueil.webp" width="900" height="1957" fetchpriority="high" alt="Écran Accueil de RNDS (en anglais) : 4 rounds sur 30 cette semaine, série de 3 jours, bouton Lancer une séance (15 × 2:00) et accès au Run GPS, avec la barre Accueil, Social, Camp et Toi."><span class="iphone__bouton"></span></div>
         <p class="legende">Capture réelle du 27 octobre 2026<sup class="appel"><a href="#note-4" aria-label="Note 4">4</a></sup></p>
       </div>
+    </div>
+  </section>
+
+  <!-- Pour qui -->
+  <section class="sec sec--carbone" id="pour-qui">
+    <div class="wrap">
+      <div class="sec__tete sec__tete--2" data-in>
+        <div style="display:grid;gap:22px">
+          <p class="label">Pour qui</p>
+          <h2 class="titre t-l">Ton sport,<br>ton niveau</h2>
+        </div>
+        <p class="lede">Tu choisis ton sport au début de chaque séance, et ton journal range tout par sport. <b>Que tu tapes le sac pour le plaisir ou que tu prépares un combat.</b></p>
+      </div>
+      <ul class="sports" data-in aria-label="Sports suivis">
+        <li>Boxe anglaise</li><li>Muay-thaï</li><li>Kick-boxing</li><li>Boxe française</li><li>MMA</li><li>Lutte</li><li>JJB</li>
+      </ul>
+      <ul class="profils">
+        <li data-in><span class="label">Tu débutes</span><p class="texte">Le programme Fondations shadow t’apprend la garde, les déplacements et les premiers coups, trois séances par semaine. <b>Le timer te dit quand travailler et quand souffler.</b></p></li>
+        <li data-in style="--d:.06s"><span class="label">Tu t’entraînes en club</span><p class="texte">Lance le timer au sac ou au sparring&nbsp;: chaque round s’ajoute à ton journal. <b>Ajoute tes partenaires de salle et lancez-vous des défis.</b></p></li>
+        <li data-in style="--d:.12s"><span class="label">Tu prépares un combat</span><p class="texte">Le programme Prépa combat monte jusqu’à 12 rounds de 3 min. <b>L’écran Camp suit ta pesée, ton poids, tes nuits et tes repas.</b></p></li>
+        <li data-in style="--d:.18s"><span class="label">Tu coaches</span><p class="texte">Envoie tes séances à tes athlètes par un simple lien. <b>Chaque semaine, ils te renvoient leur bilan.</b></p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Une semaine avec RNDS -->
+  <section class="sec" id="semaine">
+    <div class="wrap">
+      <div class="sec__tete sec__tete--2" data-in>
+        <div style="display:grid;gap:22px">
+          <p class="label">Une semaine type</p>
+          <h2 class="titre t-l">Ta semaine<br>avec RNDS</h2>
+        </div>
+        <p class="lede">Lundi au sac, mercredi en footing, dimanche le bilan. <b>Voilà à quoi ressemble une semaine d’entraînement avec l’app.</b><sup class="appel"><a href="#note-4" aria-label="Note 4">4</a></sup></p>
+      </div>
+      <ol class="semaine">
+        <li class="jour" data-in>
+          <div class="jour__texte"><p class="label">Lundi, 19 h</p><h3 class="titre t-m">Tu choisis ta séance</h3><p class="texte">Ton sport, puis sac, shadow, sparring, pattes d’ours ou corde. Classique, rythmé ou chrono libre, et le nombre de rounds.</p></div>
+          <img src="img/semaine/fr/01-seance.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Écran Ta séance : boxe anglaise, shadow, format rythmé, 6 rounds de 3:00 avec 1:00 de repos.">
+        </li>
+        <li class="jour" data-in style="--d:.06s">
+          <div class="jour__texte"><p class="label">Lundi, 19 h 05</p><h3 class="titre t-m">La cloche sonne</h3><p class="texte">Rounds, repos, voix et bips, comme à la salle. Ça sonne même écran verrouillé, par-dessus ta musique.</p></div>
+          <img src="img/semaine/fr/02-timer.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Le timer en cours sur fond rouge : round 1 sur 6, 2:44, prochain repos de 1:00.">
+        </li>
+        <li class="jour" data-in style="--d:.12s">
+          <div class="jour__texte"><p class="label">Mardi, 7 h</p><h3 class="titre t-m">Shadow dans le salon</h3><p class="texte">Pose ton iPhone et boxe dans le vide&nbsp;: la caméra compte tes directs, crochets et uppercuts. En bêta, sans aucune vidéo enregistrée.</p></div>
+          <img src="img/semaine/fr/03-shadow.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Écran du shadow filmé : mets-toi en garde, ton premier coup lance le chrono, analyse sur l’iPhone sans vidéo enregistrée.">
+        </li>
+        <li class="jour" data-in style="--d:.18s">
+          <div class="jour__texte"><p class="label">Mercredi, 18 h 30</p><h3 class="titre t-m">Footing</h3><p class="texte">Le GPS suit ta sortie. Au retour, ton allure et ton cardio kilomètre par kilomètre.<sup class="appel"><a href="#note-1" aria-label="Note 1">1</a></sup></p></div>
+          <img src="img/semaine/fr/04-run.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Analyse d’un run de 6 km en 29:23 : allure moyenne de 4:54 au km, meilleure de 4:32, 154 BPM de moyenne et la courbe cardio.">
+        </li>
+        <li class="jour" data-in>
+          <div class="jour__texte"><p class="label">Jeudi</p><h3 class="titre t-m">Ton camp</h3><p class="texte">Ta nuit, ton poids, tes repas et ton eau, à côté de ton programme et de ta prochaine séance.</p></div>
+          <img src="img/semaine/fr/05-camp.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Écran Camp : programme Prépa combat en semaine 2 sur 6, prochaine séance au sac, poids, eau et 1240 calories sur 2 400.">
+        </li>
+        <li class="jour" data-in style="--d:.06s">
+          <div class="jour__texte"><p class="label">Vendredi</p><h3 class="titre t-m">Objectif atteint</h3><p class="texte">L’accueil montre tes rounds de la semaine face à ton objectif, et ta prochaine séance à un bouton.</p></div>
+          <img src="img/semaine/fr/06-accueil.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Écran Accueil : 32 rounds sur 30 cette semaine, objectif atteint, bouton Lancer une séance et accès au Run.">
+        </li>
+        <li class="jour" data-in style="--d:.12s">
+          <div class="jour__texte"><p class="label">Samedi</p><h3 class="titre t-m">Tu partages</h3><p class="texte">Ta séance en story, avec tes vrais chiffres, sur fond transparent ou sur ta photo.</p></div>
+          <img src="img/semaine/fr/07-story.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Éditeur de story au format 9:16 : 6 km, 4:53 au km, 29:23 et 408 kcal, avec plusieurs modèles au choix.">
+        </li>
+        <li class="jour" data-in style="--d:.18s">
+          <div class="jour__texte"><p class="label">Dimanche</p><h3 class="titre t-m">Le bilan</h3><p class="texte">Tes rounds par semaine, par mois et par année, et le détail par sport&nbsp;: boxe, run, muscu.</p></div>
+          <img src="img/semaine/fr/08-progression.webp" width="680" height="1137" loading="lazy" decoding="async" alt="Écran Toi, onglet Journal : 140 rounds en octobre, objectif atteint, 29 séances, et le détail par sport.">
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -134,7 +204,7 @@
         </div>
         <ul class="points">
           <li data-in><h3>Bips et voix</h3><p class="texte">Le timer sonne au début et à la fin de chaque round, et te prévient dix secondes avant la fin.</p></li>
-          <li data-in style="--d:.06s"><h3>Mode rythmé</h3><p class="texte">Pendant le round, une voix annonce les enchaînements et l’écran affiche la défense à travailler.</p></li>
+          <li data-in style="--d:.06s"><h3>Mode rythmé</h3><p class="texte">Tu bouges en défense. Le bip tombe au hasard, comme une ouverture en combat&nbsp;: tu envoies le combo annoncé.</p></li>
           <li data-in><h3>Ta musique continue</h3><p class="texte">Apple Music ou ton podcast ne s’arrêtent pas. Le volume peut baisser le temps d’un bip.</p></li>
           <li data-in style="--d:.06s"><h3>Écran verrouillé</h3><p class="texte">Le round reste affiché en Activité en direct et dans la Dynamic Island.</p></li>
         </ul>
@@ -228,7 +298,7 @@
         <li data-in><h3>Endurance</h3><p>40 min faciles&nbsp;: la base du cardio.</p><span class="label">Zone 2</span></li>
       </ul>
       <p class="note" data-in>À chaque kilomètre, un bip, puis la voix annonce la distance et le temps.</p>
-      <div class="galerie galerie--apres">
+      <div class="galerie galerie--3 galerie--apres">
         <figure data-in>
           <div class="iphone"><div class="iphone__corps"><img src="img/app/run.webp" width="900" height="1957" loading="lazy" decoding="async" alt="Écran Run (en anglais) : GPS prêt, mode Endurance en zone 2 pour 40 minutes, annonce à chaque kilomètre, playlist au départ et guidage vocal."><span class="iphone__bouton"></span></div></div>
           <figcaption><b>Run</b><span>Choisis ton mode (libre, fractionné, zones ou seuil), l’annonce à chaque kilomètre et ta playlist au départ.</span></figcaption>
@@ -240,10 +310,6 @@
         <figure data-in style="--d:.12s">
           <div class="iphone"><div class="iphone__corps"><img src="img/app/run-cardio.webp" width="900" height="1957" loading="lazy" decoding="async" alt="Détail d’un run (en anglais) : 49:51 à 5:41 au km, 793 kcal, ressenti 8 sur 10, cardio moyen de 163 BPM et max de 179, et une dérive cardiaque de 2 %."><span class="iphone__bouton"></span></div></div>
           <figcaption><b>Cardio et zones</b><span>Ta courbe cardio, ta dérive cardiaque et le temps passé dans chaque zone.<sup class="appel"><a href="#note-1" aria-label="Note 1">1</a></sup></span></figcaption>
-        </figure>
-        <figure data-in style="--d:.18s">
-          <div class="iphone"><div class="iphone__corps"><img src="img/app/story.webp" width="900" height="1957" loading="lazy" decoding="async" alt="Story au format 9:16, modèle Minimal (en anglais) : 8,75 km, 5:41 au km, 49:51 et 793 kcal sur fond transparent, avec les autres modèles en dessous."><span class="iphone__bouton"></span></div></div>
-          <figcaption><b>Story</b><span>Ta sortie en story 9:16, sur fond transparent ou sur ta photo, prête à partager.</span></figcaption>
         </figure>
       </div>
     </div>
@@ -257,22 +323,18 @@
           <p class="label">Autour de l’entraînement</p>
           <h2 class="titre t-l">Prépa</h2>
         </div>
-        <p class="lede">Sommeil, repas, eau et poids, <b>au même endroit que tes séances.</b></p>
+        <p class="lede">Sommeil, repas, eau et poids, <b>au même endroit que tes séances.</b> L’écran Camp les réunit avec ta pesée et ton programme.</p>
       </div>
-      <div class="galerie">
+      <div class="galerie galerie--3">
         <figure data-in>
-          <div class="iphone"><div class="iphone__corps"><img src="img/app/camp.webp" width="900" height="1957" loading="lazy" decoding="async" alt="Écran Camp (en anglais) : date de la pesée, tes séances (shadow, sac, cardio, prépa combat), dernière nuit, poids, eau et nutrition."><span class="iphone__bouton"></span></div></div>
-          <figcaption><b>L’écran Camp</b><span>Tes séances, ta pesée, ta dernière nuit, ton poids, tes repas et ton eau.</span></figcaption>
-        </figure>
-        <figure data-in style="--d:.06s">
           <div class="iphone"><div class="iphone__corps"><img src="img/app/sommeil.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Écran Sommeil : 9 h 46 la dernière nuit, bien récupéré, feu vert pour une séance intense."><span class="iphone__bouton"></span></div></div>
           <figcaption><b>Sommeil</b><span>Tes nuits, lues dans Santé ou notées à la main, et un conseil pour la séance du jour.<sup class="appel"><a href="#note-3" aria-label="Note 3">3</a></sup></span></figcaption>
         </figure>
-        <figure data-in style="--d:.12s">
+        <figure data-in style="--d:.06s">
           <div class="iphone"><div class="iphone__corps"><img src="img/app/sommeil-nuits.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Les sept dernières nuits face à l’objectif de 8 heures, et les siestes avec réveil."><span class="iphone__bouton"></span></div></div>
           <figcaption><b>Nuits et siestes</b><span>Tes sept dernières nuits face à ton objectif, et un réveil pour la sieste.</span></figcaption>
         </figure>
-        <figure data-in style="--d:.18s">
+        <figure data-in style="--d:.12s">
           <div class="iphone"><div class="iphone__corps"><img src="img/app/nutrition.webp" width="1000" height="2174" loading="lazy" decoding="async" alt="Écran Nutrition : calories et macros du jour, hydratation, photo du plat."><span class="iphone__bouton"></span></div></div>
           <figcaption><b>Repas et eau</b><span>Prends ton plat en photo&nbsp;: l’iPhone estime les calories et les macros, et la photo ne quitte pas ton téléphone.<sup class="appel"><a href="#note-2" aria-label="Note 2">2</a></sup></span></figcaption>
         </figure>
@@ -402,6 +464,9 @@
       </div>
 
       <div class="faq" id="support">
+        <details><summary>C’est payant&nbsp;?<i aria-hidden="true"></i></summary><p>Non. RNDS est gratuit, sans publicité et sans achat dans l’app.</p></details>
+        <details><summary>Je ne fais pas de boxe anglaise, l’app me sert&nbsp;?<i aria-hidden="true"></i></summary><p>Oui. Tu choisis ton sport à chaque séance&nbsp;: boxe anglaise, muay-thaï, kick-boxing, boxe française, MMA, lutte ou JJB. Les rounds se règlent de 1 à 15, avec la durée et le repos que tu veux, et ton journal range tes séances par sport.</p></details>
+        <details><summary>Je débute, c’est pour moi&nbsp;?<i aria-hidden="true"></i></summary><p>Oui. Le programme Fondations shadow part de la garde et des déplacements, trois séances par semaine pendant quatre semaines, sans matériel.</p></details>
         <details><summary>Faut-il créer un compte&nbsp;?<i aria-hidden="true"></i></summary><p>Oui, en 30 secondes&nbsp;: ton e-mail (tu reçois un code à 6 chiffres, pas de mot de passe) ou «&nbsp;Continuer avec Apple&nbsp;». C’est ce qui te permet de retrouver ton compte si tu changes d’iPhone.</p></details>
         <details><summary>RNDS marche sans Apple Watch&nbsp;?<i aria-hidden="true"></i></summary><p>Oui, tout fonctionne avec l’iPhone seul. Pour voir ton cardio pendant la séance, il te faut une Apple Watch ou une ceinture cardio Bluetooth.</p></details>
         <details><summary>Le timer sonne-t-il écran verrouillé&nbsp;?<i aria-hidden="true"></i></summary><p>Oui. Les bips et la voix continuent quand l’écran est verrouillé, et le round reste affiché en Activité en direct.</p></details>
@@ -442,7 +507,7 @@
         <li id="note-1">Apple Watch sous watchOS 26 nécessaire pour le cardio au poignet. Sans montre, une ceinture cardio Bluetooth compatible fait l’affaire.</li>
         <li id="note-2">L’estimation se fait sur l’iPhone&nbsp;: par le modèle d’Apple quand l’appareil le permet, sinon par reconnaissance d’image et une base d’aliments. Elle reste indicative.</li>
         <li id="note-3">Les conseils de sommeil et d’entraînement ne sont pas un avis médical.</li>
-        <li id="note-4">Captures réelles de l’app, prises sur iPhone les 6, 11 et 27 octobre 2026. Celles du 27 octobre montrent l’app en anglais, celle du 11 octobre (journal) des données de démonstration. Seules l’heure et la musique en cours ont été masquées.</li>
+        <li id="note-4">Captures réelles de l’app, prises sur iPhone les 6, 11 et 27 octobre 2026. Celles du 27 octobre montrent l’app en anglais, celle du 11 octobre (journal) des données de démonstration. Seules l’heure et la musique en cours ont été masquées. Les écrans de «&nbsp;Ta semaine avec RNDS&nbsp;» viennent des visuels de l’App Store du 30 octobre 2026.</li>
         <li id="note-5">Vidéo de la bannière&nbsp;: NXTLVL Media.</li>
       </ol>
       <p class="pied__marques">Apple, le logo Apple, Apple Watch, iPhone et Santé sont des marques d’Apple Inc., déposées aux États-Unis et dans d’autres pays. App Store est une marque de service d’Apple Inc.</p>

@@ -68,7 +68,7 @@
   $$('main > section[id]').forEach(s => navIO.observe(s));
 
   /* Barres de progression : une par section, comme les rounds du timer */
-  const sections = ['top', 'timer', 'programmes', 'run', 'prepa', 'suivi', 'montre', 'vie-privee', 'coulisses', 'telecharger'].map(id => $('#' + id)).filter(Boolean);
+  const sections = ['top', 'pour-qui', 'semaine', 'timer', 'programmes', 'run', 'prepa', 'suivi', 'montre', 'vie-privee', 'coulisses', 'telecharger'].map(id => $('#' + id)).filter(Boolean);
   const barre = $('#progression');
   if (barre) {
     barre.innerHTML = sections.map(() => '<i></i>').join('');
