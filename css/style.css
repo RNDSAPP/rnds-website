@@ -475,3 +475,9 @@ ul, ol { list-style: none; }
 @media (prefers-reduced-motion: reduce) {
   .jour:hover img { transform: none; }
 }
+
+/* Ponctuation des titres : en chasse fixe, le point, la virgule et l'apostrophe occupent une case entière
+   et laissent un trou (« ROUND . », « L ’APP »). On les resserre contre la lettre. */
+.titre .pt { margin-left: -.14em; }
+.titre .ap { margin: 0 -.2em; }
+.titre .dp { margin-left: -.22em; }

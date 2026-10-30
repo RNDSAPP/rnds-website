@@ -27,6 +27,16 @@
   const t = Object.assign(t0, s);
   const vue = document.getElementById('invitation').content.cloneNode(true);
   vue.querySelectorAll('[data-t]').forEach(n => { n.textContent = t[n.dataset.t]; });
+  /* Titre en chasse fixe : point et apostrophe resserrés, comme dans le reste du site */
+  vue.querySelectorAll('.titre [data-t]').forEach(n => {
+    n.replaceChildren(...n.textContent.split(/([.,’])/).filter(Boolean).map(x => {
+      if (!/^[.,’]$/.test(x)) return x;
+      const sp = document.createElement('span');
+      sp.className = x === '’' ? 'ap' : 'pt';
+      sp.textContent = x;
+      return sp;
+    }));
+  });
   vue.querySelector('.pseudo').textContent = pseudo;
   const img = vue.querySelector('.badge-store img');
   Object.assign(img, { src: t.badge, alt: t.badgeAlt, width: t.badgeW, height: 48 });
