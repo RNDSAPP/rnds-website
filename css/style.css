@@ -481,3 +481,14 @@ ul, ol { list-style: none; }
 .titre .pt { margin-left: -.14em; }
 .titre .ap { margin: 0 -.2em; }
 .titre .dp { margin-left: -.22em; }
+
+/* Partenaires : ambassadeurs, sponsors, événements */
+.partenaires { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.partenaire { background: var(--carte); border: 1px solid #1a1a1a; border-radius: 24px; padding: 26px 24px 28px; display: grid; gap: 14px; align-content: start; grid-template-rows: auto auto 1fr auto auto; }
+.partenaire .texte b { color: var(--os); font-weight: 400; }
+.partenaire__qui { font-size: 14px; color: var(--os); padding-top: 16px; border-top: 1px solid var(--trait); }
+.partenaire__qui .label { margin-right: 8px; }
+.partenaire .lien { justify-self: start; margin-top: 6px; }
+@media (max-width: 860px) {
+  .partenaires { grid-template-columns: 1fr; }
+}
