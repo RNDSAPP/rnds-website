@@ -5,14 +5,14 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>RNDS · L’app des sports de combat pour iPhone et Apple Watch</title>
-  <meta name="description" content="L’app des sports de combat qui chronomètre tes rounds et garde chacune de tes séances&nbsp;: boxe, muay-thaï, kick-boxing, boxe française, MMA, lutte et JJB. Sur iPhone et Apple Watch, sans publicité.">
+  <title>RNDS · Timer de boxe et app sports de combat, iPhone et Watch</title>
+  <meta name="description" content="Timer de boxe et journal d’entraînement pour boxe, muay-thaï, kick-boxing, boxe française, MMA, lutte et JJB, sur iPhone et Apple Watch. Gratuit, sans pub.">
   <meta property="og:site_name" content="RNDS">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:url" content="https://rnds.app/">
-  <meta property="og:title" content="RNDS · Round après round">
-  <meta property="og:description" content="L’app des sports de combat qui chronomètre tes rounds et garde chacune de tes séances&nbsp;: boxe, muay-thaï, kick-boxing, boxe française, MMA, lutte et JJB. Sur iPhone et Apple Watch, sans publicité.">
+  <meta property="og:title" content="RNDS · Timer de boxe et sports de combat">
+  <meta property="og:description" content="Timer de boxe et journal d’entraînement pour boxe, muay-thaï, kick-boxing, boxe française, MMA, lutte et JJB, sur iPhone et Apple Watch. Gratuit, sans pub.">
   <meta property="og:image" content="https://rnds.app/img/og.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -35,13 +35,71 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "RNDS",
-    "operatingSystem": "iOS 26, watchOS 26",
-    "applicationCategory": "HealthApplication",
-    "description": "Timer de rounds, journal d'entraînement, runs et prépa pour tous les sports de combat. iPhone et Apple Watch.",
-    "inLanguage": ["fr", "en"],
-    "author": { "@type": "Person", "name": "Marc Bouraoui" }
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://rnds.app/#organization",
+        "name": "RNDS",
+        "url": "https://rnds.app/",
+        "logo": "https://rnds.app/img/icone-512.png",
+        "sameAs": [
+          "https://apps.apple.com/app/rnds/id6819875092"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rnds.app/#website",
+        "url": "https://rnds.app/",
+        "name": "RNDS",
+        "inLanguage": [
+          "fr",
+          "en"
+        ],
+        "publisher": {
+          "@id": "https://rnds.app/#organization"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://rnds.app/#webpage",
+        "url": "https://rnds.app/",
+        "inLanguage": "fr",
+        "isPartOf": {
+          "@id": "https://rnds.app/#website"
+        },
+        "about": {
+          "@id": "https://rnds.app/#app"
+        }
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://rnds.app/#app",
+        "name": "RNDS",
+        "alternateName": "RNDS: Fight Timer & Training",
+        "url": "https://rnds.app/",
+        "description": "Timer de rounds, journal d’entraînement, runs et prépa pour tous les sports de combat. iPhone et Apple Watch, gratuit et sans publicité.",
+        "operatingSystem": "iOS 26, watchOS 26",
+        "applicationCategory": "SportsApplication",
+        "downloadUrl": "https://apps.apple.com/app/rnds/id6819875092",
+        "installUrl": "https://apps.apple.com/app/rnds/id6819875092",
+        "inLanguage": "fr",
+        "image": "https://rnds.app/img/og.jpg",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "publisher": {
+          "@id": "https://rnds.app/#organization"
+        },
+        "author": {
+          "@id": "https://rnds.app/#organization"
+        },
+        "sameAs": [
+          "https://apps.apple.com/app/rnds/id6819875092"
+        ]
+      }
+    ]
   }
   </script>
 </head>
@@ -102,7 +160,8 @@
     </div>
     <div class="wrap hero__grille">
       <div class="hero__texte">
-        <h1 class="titre t-xl" data-in style="--d:.08s">Round<br>après<br>round<span class="pt">.</span></h1>
+        <h1 class="label hero__sur" data-in style="--d:0s">Timer de boxe et journal d’entraînement pour iPhone et Apple Watch</h1>
+        <p class="titre t-xl" data-in style="--d:.08s">Round<br>après<br>round<span class="pt">.</span></p>
         <p class="lede" data-in style="--d:.16s">L’app des sports de combat qui chronomètre tes rounds et garde chacune de tes séances. <b>Boxe, muay-thaï, kick-boxing, boxe française, MMA, lutte et JJB, sur iPhone et Apple Watch.</b><sup class="appel"><a href="#note-1" aria-label="Note 1">1</a></sup></p>
         <div class="hero__actions" data-in style="--d:.24s">
           <a class="badge-store" href="https://apps.apple.com/app/rnds/id6819875092" data-app-store><img src="img/badges/app-store-fr-fr.svg" width="152" height="48" alt="Télécharger dans l’App Store"></a>
@@ -194,7 +253,7 @@
       </div>
       <div class="timer__droite">
         <div class="sec__tete" style="margin-bottom:0" data-in>
-          <h2 class="titre t-l">Le timer</h2>
+          <h2 class="titre t-l">Le timer de boxe</h2>
           <p class="lede">Un grand chiffre qui se lit depuis le sac ou le tapis, <b>et des bips qui passent par-dessus ta musique.</b></p>
         </div>
         <div class="specs" data-in>
@@ -501,6 +560,7 @@
       </div>
 
       <div class="faq" id="support">
+        <h3 class="label faq__titre">Questions fréquentes</h3>
         <details><summary>C’est payant&#8239;?<i aria-hidden="true"></i></summary><p>Non. RNDS est gratuit, sans publicité et sans achat dans l’app.</p></details>
         <details><summary>Je ne fais pas de boxe anglaise, l’app me sert&#8239;?<i aria-hidden="true"></i></summary><p>Oui. Tu choisis ton sport à chaque séance&nbsp;: boxe anglaise, muay-thaï, kick-boxing, boxe française, MMA, lutte ou JJB. Les rounds se règlent de 1 à 15, avec la durée et le repos que tu veux, et ton journal range tes séances par sport.</p></details>
         <details><summary>Je débute, c’est pour moi&#8239;?<i aria-hidden="true"></i></summary><p>Oui. Le programme Fondations shadow part de la garde et des déplacements, trois séances par semaine pendant quatre semaines, sans matériel.</p></details>
